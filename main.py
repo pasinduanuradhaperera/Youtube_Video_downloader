@@ -1,8 +1,8 @@
-from pytube import YouTube as Yo  # import pytube
+from pytube import YouTube as Y  # import pytube
 from sys import argv
 
 link = input("Enter Link : ")  # assign the argument to link variable
-yt = Yo(link)
+yt = Y(link)
 print("Title: ", yt.title)  # display title
 print("Vievs: ", yt.views)  # display views
 
