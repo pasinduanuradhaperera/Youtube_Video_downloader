@@ -3,9 +3,7 @@ import main
 
 
 def call_download():
-    main.download()
-
-
+    main.download(link_area.get())
 
 ctk.set_appearance_mode("System")  # theme select as system settings
 ctk.set_default_color_theme("green")  # colour to green
@@ -22,7 +20,7 @@ topic.pack(pady=12, padx=10)
 link_area = ctk.CTkEntry(master=frame, placeholder_text='Paste the Link here')
 link_area.pack(pady=12, padx=10)
 
-download_button = ctk.CTkButton(master=frame, text='Download', command=call_download())
+download_button = ctk.CTkButton(master=frame, text='Download', command=call_download)
 download_button.pack(pady=12, padx=10)
 
 root.mainloop()
